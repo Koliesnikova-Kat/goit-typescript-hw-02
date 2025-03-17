@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
-import { fetchedPictures, PictureCard } from '../services/unsplash-api';
-import SearchBar from '../SearchBar/SearchBar';
-import ImageGallery from '../ImageGallery/ImageGallery';
-import Loader from '../Loader/Loader';
-import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
-import ImageModal from '../ImageModal/ImageModal';
+import { fetchedPictures } from './components/services/unsplash-api';
+import SearchBar from './components/SearchBar/SearchBar';
+import ImageGallery from './components/ImageGallery/ImageGallery';
+import Loader from './components/Loader/Loader';
+import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
+import ImageModal from './components/ImageModal/ImageModal';
 import toast from 'react-hot-toast';
 import Modal from 'react-modal';
+import { PictureCard } from './components/types';
 
 Modal.setAppElement('#root');
 

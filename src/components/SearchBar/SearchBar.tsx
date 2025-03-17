@@ -1,6 +1,6 @@
-import toast from "react-hot-toast";
-import s from "./SearchBar.module.css";
-import { ChangeEvent, FormEvent, KeyboardEvent, useState } from "react";
+import toast from 'react-hot-toast';
+import s from './SearchBar.module.css';
+import { ChangeEvent, FormEvent, KeyboardEvent, useState } from 'react';
 
 interface SearchBarProps {
   onSubmit: (query: string) => void;
@@ -8,7 +8,7 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ onSubmit }: SearchBarProps) {
-  const [query, setQuery] = useState<string>("");
+  const [query, setQuery] = useState<string>('');
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
@@ -19,7 +19,7 @@ export default function SearchBar({ onSubmit }: SearchBarProps) {
       onSubmit(query);
     }
   };
-  
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 

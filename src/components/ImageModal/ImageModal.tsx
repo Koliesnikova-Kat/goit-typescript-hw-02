@@ -1,5 +1,5 @@
 import Modal from 'react-modal';
-import s from "./ImageModal.module.css";
+import s from './ImageModal.module.css';
 
 interface ImageModalProps {
   isOpen: boolean;
@@ -8,7 +8,12 @@ interface ImageModalProps {
   description?: string;
 }
 
-export default function ImageModal({ isOpen, onClose, image, description }: ImageModalProps) {
+export default function ImageModal({
+  isOpen,
+  onClose,
+  image,
+  description,
+}: ImageModalProps) {
   return (
     <Modal
       isOpen={isOpen}

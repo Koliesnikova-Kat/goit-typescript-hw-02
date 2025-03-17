@@ -1,4 +1,4 @@
-import s from "./ImageCard.module.css";
+import s from './ImageCard.module.css';
 
 interface ImageCardProps {
   img: string;
@@ -7,7 +7,12 @@ interface ImageCardProps {
   image: string;
 }
 
-export default function ImageCard({ img, description, onClick, image }: ImageCardProps) {
+export default function ImageCard({
+  img,
+  description,
+  onClick,
+  image,
+}: ImageCardProps) {
   return (
     <div className={s.el}>
       <img
