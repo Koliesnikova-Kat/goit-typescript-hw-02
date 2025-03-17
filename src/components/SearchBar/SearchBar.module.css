@@ -1,0 +1,38 @@
+header {
+  background-color: #069948;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.input {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  background-color: #aee3c1;
+  font-size: 20px;
+}
+
+.btn {
+  /* display: flex; */
+  padding: 8px 24px;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #44c1ac;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.64px;
+}
+
+.btn:hover {
+  background-color: #46d57b;
+}
